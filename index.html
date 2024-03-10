@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"  rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Application Management</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(bg.jpg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form {
+    width: 420px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.form .inputbox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputbox input {
+    font-size: 16px;
+    color: whitesmoke;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border: 2px solid whitesmoke;
+    outline: none;
+    border-radius: 40px;
+    background: transparent;
+}
+
+.inputbox input::placeholder {
+    color: #fff;
+}
+.inputbox i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.form .btn {
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+</style>
+<body>
+    <div class="form">
+        <form action="" method="POST">
+            <h1>Application Management</h1>
+            <div class="input-box">
+                <input name="Email" type="text" placeholder="Email" required>
+                <i class="bx bxs-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input name="Password" type="password" placeholder="Password" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <button type="Submit" value="Submit" class="btn">Login</button>
+
+        </form>
+    </div>
+</body>
+</html>
